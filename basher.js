@@ -115,7 +115,7 @@ const abash = {
 				tempAttack = "synchronise shear windwhip";
 				break;
 			default:
-				tempAttack = "kill";
+				tempAttack = "synchronise shear windwhip";
 				break;
                 }
    
