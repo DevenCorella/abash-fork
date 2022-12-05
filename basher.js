@@ -88,6 +88,7 @@ const abash = {
                       myClass = nexusclient.datahandler().GMCP.CharStats[2];
                    }
 		var tempAttack = "";
+		var tempPrep = "";
 		var bashing = nexusclient.variables().get("bashing");
 
 		switch (myClass) {
