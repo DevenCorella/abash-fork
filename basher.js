@@ -111,6 +111,9 @@ const abash = {
 			case "Jester":
 				tempAttack = "bop";
 				break;
+			case "Sylvan":
+				tempAttack = "synchronise shear windwhip";
+				break;
 			default:
 				tempAttack = "kill";
 				break;
