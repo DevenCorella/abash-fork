@@ -112,7 +112,7 @@ const abash = {
 				tempAttack = "bop";
 				break;
 			case "Sylvan":
-				tempAttack = "synchronise shear windwhip";
+				tempAttack = "synchronise shear windwhip @tar";
 				break;
 			default:
 				tempAttack = "windwhip";
