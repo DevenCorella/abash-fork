@@ -87,12 +87,40 @@ const abash = {
                    if(myClass == "Runewarden") {
                       myClass = nexusclient.datahandler().GMCP.CharStats[2];
                    }
-		var tempPrep = "";
+		var tempAttack = "";
 		var bashing = nexusclient.variables().get("bashing");
 
-		
-   
+		switch (myClass) {
+			case "Spec: Two Handed":
+				tempPrep = "battlefury focus speed";
+				tempAttack = "slaughter";
+				break;
+			case "Red Dragon":
+				tempAttack = "gut";
+				break;
+			case "Depthswalker":
+				tempAttack = "shadow reap";
+				break;
+			case "Druid":
+				tempAttack = "maul";
+				break;
+			case "earth Elemental Lord":
+				tempAttack = "terran pulverise";
+				break;
+			case "Jester":
+				tempAttack = "bop";
+				break;
+			case "Sylvan":
+				tempAttack = "synchronise shear windwhip";
+				break;
+			default:
+				tempAttack = "windwhip";
+				break;
+                }
+
+
   		nexusclient.variables().set("atkPrep", tempPrep);
+		nexusclient.variables().set("atkCommand", tempAttack);
 
 		roomItems.forEach(function(el) {
 			if(enemyList && enemyFound == false) {
