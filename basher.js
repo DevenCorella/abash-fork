@@ -107,7 +107,6 @@ const abash = {
 			nexusclient.variables().set("bashing", false);
 		} else if (bashing == false) {
 			nexusclient.variables().set("bashing", true);
-			nexusclient.datahandler().send_command(tempPrep);
 			nexusclient.datahandler().send_command(tempAttack);
 		}
 	}, // End attackThings()
@@ -170,10 +169,8 @@ const abash = {
 
 		if(bashing) {
 			//var atkCommand = "gut";
-			var atkPrep = nexusclient.variables().get("atkPrep");
 			var atkCommand = nexusclient.variables().get("atkCommand");
 
-			nexusclient.datahandler().send_command(atkPrep);
 			nexusclient.datahandler().send_command(atkCommand);
 		}
 	} // End commitAttack()
