@@ -87,6 +87,7 @@ const abash = {
                    if(myClass == "Runewarden") {
                       myClass = nexusclient.datahandler().GMCP.CharStats[2];
                    }
+		var tempAttack = nexusclient.variables().get("atkCommand");
 		var bashing = nexusclient.variables().get("bashing");
 
 		roomItems.forEach(function(el) {
@@ -107,6 +108,8 @@ const abash = {
 			nexusclient.variables().set("bashing", false);
 		} else if (bashing == false) {
 			nexusclient.variables().set("bashing", true);
+			
+			nexusclient.datahandler().send_command(tempAttack);
 		}
 	}, // End attackThings()
 
